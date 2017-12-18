@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'; //at sign shows root folder for angular
 
-@Component({
+@Component({ //decorating the classes, ties the html and css to this piece of code
   selector: 'app-root', //you make up the html tag that you wanna use
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] //an array of files(string path), can add more files
