@@ -15,7 +15,7 @@ showConsole(): void{
   constructor() { }
 
   ngOnInit() {
-  	this.user = new User("bmarley","iriemon","bob","marley","555-555-5555","bmarley@gmail.com",true,true,true);
+  	this.user = new User("bmarley","iriemon","bob","marley","555-555-5555","bmarley@gmail.com",false,false,false);
   	this.showConsole();
   }
 

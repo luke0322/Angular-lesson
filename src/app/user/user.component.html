@@ -1,7 +1,8 @@
 
 <div class ="table-success">
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<table class = "table">
+<p *ngIf='!user'>The data is loading .... </p>	  
+<table *ngIf='user' class = "table"> <!-- dont render table, till user shows up -->
  	<tr><td>Username:</td><td><input [(ngModel)]="user.userName" type="text"></td></tr> <!-- CALL MUST BE SAME CASE AS user.ts -->
 
  	<tr><td>Password:</td><td><input [(ngModel)]="user.password" type="text"></td></tr>
@@ -11,10 +12,10 @@
  	<tr><td>Email:</td><td><input [(ngModel)]="user.email" type="text"></td></tr>
  	
 
- 	<tr><td>Active:</td><td><input [(ngModel)]="user.active" type="text"></td></tr>
- 	<tr><td>Reviewer:</td><td><input [(ngModel)]="user.reviewer" type="text"></td></tr>
+ 	<tr><td>Is Active?</td><td><input [(ngModel)]="user.active" type="checkbox"></td></tr>
+ 	<tr><td>Is Reviewer?</td><td><input [(ngModel)]="user.reviewer" type="checkbox"></td></tr>
 
- <tr><td>Admin:</td><td><input [(ngModel)]="user.admin" type="text"></td></tr>
+ <tr><td>Is Admin?</td><td><input [(ngModel)]="user.admin" type="checkbox"></td></tr>
  <button (click) = 'showConsole()'>Console.log(user)</button>
 </table>
 </div>
