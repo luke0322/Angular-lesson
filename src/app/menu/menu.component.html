@@ -1,5 +1,6 @@
 <nav>
 	<ol>
-		<li *ngFor='let menu of menuitems' title ='{{menu.tooltip}}'><a routerLink='{{menu.href}}'>{{menu.display}}</a></li>
+		<li *ngFor='let menu of menuitems' title ='{{menu.tooltip}}'>
+			<a routerLink='{{menu.href}}'>{{menu.display}}</a></li>
 	</ol> <!-- we are just changing components with routerLink -->
-</nav>
+</nav> <!-- angular more tied in with html tags -->

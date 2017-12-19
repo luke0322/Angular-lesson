@@ -1,0 +1,88 @@
+<div class = "componentdiv"> <!--good idea to assign an id or class -->
+<link rel ="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<p *ngIf='!todayIsTuesday'>Today is tuesday </p>
+<p *ngIf='todayIsTuesday'>Today is not tuesday </p>
+<p><label> the text is: {{textForAdmin}}</label></p> <!-- we want to add a piece of text to button dynamically -->
+<button (click)='buttonClick()'(onmouseover)='buttonClick()' *ngIf='isAdmin'>{{textForButton}}</button>
+ <p>
+ 	<input [(ngModel)]="textForAdmin" type="text">
+ </p> 
+<!-- see the ts class properties, input is a 2 way binding -->
+
+
+
+
+<p class ="update">Lucas David Hinegardner • lucas.hinegardner@gmail.com • 937-681-8495 • 4927 Woodman Park Drive, Dayton, Ohio 45432</p>
+
+<h3>OBJECTIVE:</h3>
+<p class = "update">
+Self-starter with 2 years of experience in the environmental consulting industry. Possess in-depth knowledge of project coordination and completion in a small team-based setting for clients and research purposes. 
+</p>
+<p class ="update">
+During these experiences, have sparked a passion for computers and Software Development. Set up a development environment using Android Studio and Visual Studio IDE’s, and have learned basic XML, HTML,  command line, and CSS using codecademy and FreeCodeCamp.  
+</p>
+<p class ="update">
+In spring of 2017, another step was taken to learn basic C++ at Sinclair. Currently learning basic Java and Object-Oriented Concepts in Android Studio using several textbooks as a reference. Future goals include entering the IT industry.
+</p>
+<h3>RELEVANT COURSEWORK:</h3>
+CIS 1111: Introduction to Problem Solving and Computer Programming (Received an A) Spring 2017  
+<ul>
+   <li>Developed in  Visual Studio 2015 Community IDE for basic C++ programs</li>
+   <li>Learned I/O, Arrays, Functions, variables, Debugging, Looping, nesting, and other key concepts</li>
+   <li>Allocated 6GB of RAM for Virtual Machine using Parallels 12 within Mac OS 10.12 (Sierra)  </li>
+   <li>Demonstrated understanding of syntax and semantics of C++ programming language</li>
+</ul>
+
+<h3>PROFESSIONAL EXPERIENCES:</h3>
+Amec Foster Wheeler, Dayton, Ohio - Environmental Scientist • February 2016-Present
+
+<ul>
+<li>Gas Chromatography software experience (GC Solutions) analyzing vapor samples for VOCs and BTEX graph peaks</li>
+<li>Groundwater flow mapping and contouring using Excel and engineer’s rule</li>
+<li>Groundwater monitoring and rock core sampling for various clients in Ohio, Indiana, and Kentucky</li>
+<li>Project coordination, planning, and reporting lab results to project managers for EPA approval</li>
+<li>Remediation system plumbing and quarterly groundwater sampling</li>
+</ul>
+
+
+Pillar Innovations LLC, Morgantown, WV – Electrical Technician •
+October 2015-February 2016
+<ul>
+<li>Assembled solar inverters as a subcontractor for General Electric</li>
+<li>Consulted with engineers to solve wiring problems during the manufacturing process</li>
+</ul>
+
+
+SWCA Environmental Consultants, Bridgeville, Pennsylvania – Environmental • Technician Summers of 2013-2015
+<ul>
+<li>Assessed proposed natural gas pipeline right-of-ways to preserve significant wetlands and streams </li>
+<li>Evaluated gas pipelines to identify erosional, sedimentation, and performance issues</li>
+<li>Logged handheld GEOXH GPS Unit data data and created shapefiles for Terrasync software</li>
+<li>Conducted soil sampling in Phase I and Phase III Environmental Site Assessments</li>
+</ul>
+
+
+<h3>STUDENT ACTIVITIES:</h3>
+
+Geography Club, Morgantown, West Virginia – Vice President, Treasurer • Fall 2012-May 2015
+<ul>
+<li>Led meetings, created events, and promoted club to grow in size and participation</li>
+<li>Raised awareness in the community and on campus for current environmental issues </li>
+</ul>
+
+Delta Tau Delta Fraternity, Morgantown, West Virginia – Risk Management, Founder • Fall 2013-May 2015
+<ul>
+<li>Gained awareness in the local community by raising money for JDRF</li>    
+</ul>
+
+<h3>EDUCATION:</h3>
+
+West Virginia University,  Morgantown, West Virginia 
+<ul>
+        <li>Bachelor of Science in Geology, 
+        Minor in Geography</li> 	                              
+        <li>Graduation: August of 2015</li>
+        <li>GPA:  3.33/4.00 Cumulative</li>
+</ul>
+</div>

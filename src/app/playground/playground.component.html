@@ -1,0 +1,7 @@
+<p><label>{{textForPerson}}</label></p> <!-- we want to add a piece of text to button dynamically -->
+<button (click)='buttonClick1()'>Button1</button>
+
+<button (click)='buttonClick2()'>Button2</button>
+
+<button (click)='buttonClick3()' *ngIf='isAdmin'>Button3</button>
+
