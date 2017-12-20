@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PlaygroundComponent } from './playground/playground.component';
 import { UserComponent } from './user/user.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 
@@ -22,7 +23,8 @@ import { UserComponent } from './user/user.component';
     AboutComponent,
     ResumeComponent,
     PlaygroundComponent,
-    UserComponent
+    UserComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
