@@ -1,30 +1,30 @@
 export class User{
-	id: number;
-	userName: string;
-	password: string;
-	firstName: string;
-	lastName: string;
-	phone: string;
-	email: string;
-	admin: boolean;
-	reviewer: boolean;
-	active: boolean;
+	Id: number;
+	UserName: string;
+	Password: string;
+	FirstName: string;
+	LastName: string;
+	PhoneNumber: string;
+	Email: string;
+	Admin: boolean;
+	Reviewer: boolean;
+	Active: boolean;
 
 	display(): void {
 		console.log(this);
 	}
 
-	constructor(userName: string,password: string,firstName: string, lastName: string,
-		phone: string,email: string,admin: boolean,reviewer: boolean,active: boolean){
-		this.userName = userName;
-		this.password = password;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.phone = phone;
-		this.email = email; //do not need id when creating a new entry 
-		this.admin = admin;
-		this.reviewer = reviewer;
-		this.active = active;
+	constructor(UserName: string,Password: string,FirstName: string, LastName: string,
+		PhoneNumber: string,Email: string,Admin: boolean,Reviewer: boolean,Active: boolean){
+		this.UserName = UserName;
+		this.Password = Password;
+		this.FirstName = FirstName;
+		this.LastName = LastName;
+		this.PhoneNumber = PhoneNumber;
+		this.Email = Email; //do not need id when creating a new entry 
+		this.Admin = Admin;
+		this.Reviewer = Reviewer;
+		this.Active = Active;
 	}
 
 }

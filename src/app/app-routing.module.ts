@@ -6,6 +6,7 @@ import { ResumeComponent} from './resume/resume.component';
 import { PlaygroundComponent} from './playground/playground.component';
 import { UserComponent} from './user/user.component';
 import { UserListComponent} from './user-list/user-list.component';
+import { UserDetailComponent} from './user-detail/user-detail.component';
 const routes: Routes = [
 	{ path: '', redirectTo: '/', pathMatch: 'full'},
 	//if path is empty, redirect it to this path /home, full url
@@ -14,6 +15,7 @@ const routes: Routes = [
 	{ path: 'resume',component: ResumeComponent},
 	{ path: 'playground', component: PlaygroundComponent},
 	{ path: 'user', component: UserComponent},
+	{ path: 'user/detail/:id', component: UserDetailComponent},
 	{ path: 'userlist', component: UserListComponent},
 	{ path: '**', component: HomeComponent}
 	 //URL in browser must replicate this at end

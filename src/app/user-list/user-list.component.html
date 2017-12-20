@@ -1,3 +1,30 @@
-<p>
-  user-list works!
-</p>
+<table class = "table table-sm">
+
+<tr>
+	<th>ID</th>
+	<th>Username</th>
+	<th>Password</th>
+	<th>Name</th>
+	<th>PhoneNumber</th>
+	<th>Email</th>
+	<th>Is Admin?</th>
+	<th>Is Reviewer?</th>
+	<th>Is Active?</th>
+	<th>Actions</th>
+
+</tr> 
+	<tr *ngFor='let user of users'>
+
+		<td>{{user.Id}}</td>
+		<td>{{user.UserName}}</td>
+		<td>********</td>
+		<td>{{user.FirstName}} {{user.LastName}}</td>
+		<td>{{user.PhoneNumber}}</td>
+		<td>{{user.Email}}</td>
+		<td>{{user.Admin ? "YES": "NO"}}</td>
+		<td>{{user.Reviewer? "YES": "NO"}}</td>
+		<td>{{user.Active ? "YES": "NO"}}</td> <!--not served up -->
+		<td><a routerLink = '/user/detail/{{user.Id}}'>Detail</a></td>
+
+	</tr>
+</table>
